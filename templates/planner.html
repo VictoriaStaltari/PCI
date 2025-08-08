@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>PCI</title>
+</head>
+<body>
+    <header>
+        <h1>Comienza a planificar tu cuatrimestre!</h1>
+    </header>
+    <main action="/planner" method="post">
+        <h2>Materias</h2>
+        <p>Ingresa las materias que ya has cursado:</p>
+        <div class="materias">
+            <input type="checkbox" name="materia1" id="materia1">Analisis Matemático 1
+            <label for="materia1">Materia 1</label>
+            <input type="checkbox" name="materia2" id="materia2">Álgebra y Geometría
+            <label for="materia2">Materia 2</label>
+            <input type="checkbox" name="materia3" id="materia3">Química
+            <label for="materia3">Materia 3</label>
+            <input type="checkbox" name="materia4" id="materia4">Física
+            <label for="materia4">Materia 4</label>
+        </div>
+        <h2>Cuantas materias por cuatrimestre desea cursar?</h2>
+        <div class="materias">
+            <p>Cantidad preferible:</p><input type="number" name="materiasPorCuatrimestre" id="materiasPorCuatrimestre" min="1" max="10">
+            <p>Cantidad minima:</p><input type="number" name="materiasMinimas" id="materiasMinimas" min="1" max="10">
+            <p>Cantidad maxima:</p><input type="number" name="materiasMaximas" id="materiasMaximas" min="1" max="10">
+        </div>
+        <h2>Agregar Materia</h2>
+        <div class="materiaNueva">
+            <label for="nombreMateria">Nombre de la materia:</label>
+            <input type="text" id="nombreMateria" name="nombreMateria">
+            <label for="idMateria">Código de la materia:</label>
+            <input type="number" id="idMateria" name="idMateria">
+            <button type="button" id="agregarMateria">Agregar</button>
+        </div>
+        <button type="submit">Planificar</button>
+    </main>
+</body>
+</html>
