@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>PCI</title>
+</head>
+<body>
+    <header>
+        <h1>Comienza a planificar tu cuatrimestre!</h1>
+    </header>
+    <main>
+        <form action="/carrera/{{ carrera }}" method="post">
+            <h2>Materias</h2>
+            <p>Ingresa las materias que ya has cursado:</p>
+            <div id="materiasDiv"></div>
+            <h2>Cuantas materias por cuatrimestre desea cursar?</h2>
+            <div class="materias">
+                <p>Cantidad preferible:</p><input type="number" name="materiasPorCuatrimestre" id="materiasPorCuatrimestre" min="1" max="10">
+                <p>Cantidad minima:</p><input type="number" name="materiasMinimas" id="materiasMinimas" min="1" max="10">
+                <p>Cantidad maxima:</p><input type="number" name="materiasMaximas" id="materiasMaximas" min="1" max="10">
+            </div>
+            <h2>Agregar Materia</h2>
+            <div class="materiaNueva">
+                <label for="nombreMateria">Nombre de la materia:</label>
+                <input type="text" id="nombreMateria" name="nombreMateria">
+                <label for="idMateria">Código de la materia:</label>
+                <input type="number" id="idMateria" name="idMateria">
+                <button id="agregarMateria">Agregar</button>
+            </div>
+            <button type="submit">Planificar</button>
+        </form>
+    </main>
+    <script src="/static/carrera.js"></script>
+</body>
+</html>

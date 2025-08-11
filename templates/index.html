@@ -14,11 +14,25 @@
     <main>
         <h2>Carreras</h2>
         <div class="buttonsContainer">
-            <button>Ingeniería en Sistemas</button>
-            <button>Ingeniería Electrónica</button>
-            <button>Ingeniería Eléctrica</button>
-            <button>Ingeniería en Computación</button>
+            <button id="ing_sistemas">Ingeniería en Sistemas</button>
+            <button id="ing_electronica">Ingeniería Electrónica</button>
+            <button id="ing_electrica">Ingeniería Eléctrica</button>
+            <button id="ing_computacion">Ingeniería en Computación</button>
         </div>
     </main>
+    <script>
+        document.getElementById("ing_sistemas").addEventListener("click", function() {
+            window.location.href = "/carrera/ingenieria_en_sistemas";
+        });
+        document.getElementById("ing_electronica").addEventListener("click", function() {
+            window.location.href = "/carrera/ingenieria_electronica";
+        });
+        document.getElementById("ing_electrica").addEventListener("click", function() {
+            window.location.href = "/carrera/ingenieria_electrica";
+        });
+        document.getElementById("ing_computacion").addEventListener("click", function() {
+            window.location.href = "/carrera/ingenieria_en_computacion";
+        });
+    </script>
 </body>
 </html>
