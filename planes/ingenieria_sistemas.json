@@ -1,0 +1,415 @@
+{
+    "nombre": "Ingeniería en Sistemas de Información",
+    "codigo": 2012,
+    "materias_totales": [
+        {
+            "nombre": "Resolución de Problemas y Algoritmos",
+            "codigo": 5793,
+            "correlativas": [],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                7713,
+                7791
+            ]
+        },
+        {
+            "nombre": "Elementos de Álgebra y de Geometría",
+            "codigo": 5912,
+            "correlativas": [],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                7713,
+                7791,
+                5552
+            ]
+        },
+        {
+            "nombre": "Análisis Matemático I",
+            "codigo": 5551,
+            "correlativas": [],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                5552,
+                7820,
+                3051,
+                6601
+            ]
+        },
+        {
+            "nombre": "Introducción a la Programación Orientada a Objetos",
+            "codigo": 7713,
+            "correlativas": [
+                5793,
+                5912
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                7655,
+                7949,
+                7951,
+                5744,
+                7821
+            ]
+        },
+        {
+            "nombre": "Lenguajes Formales y Autómatas",
+            "codigo": 7791,
+            "correlativas": [
+                5793,
+                5912
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                7949,
+                5744,
+                7821,
+                7820
+            ]
+        },
+        {
+            "nombre": "Introducción a la Ingeniería de Software",
+            "codigo": 7714,
+            "correlativas": [],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                7821
+            ]
+        },
+        {
+            "nombre": "Análisis Matemático II",
+            "codigo": 5552,
+            "correlativas": [
+                5912,
+                5551
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                7820,
+                3058
+            ]
+        },
+        {
+            "nombre": "Estructuras de Datos",
+            "codigo": 7655,
+            "correlativas": [
+                5551,
+                7713,
+                5793
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                7951
+            ]
+        },
+        {
+            "nombre": "Teoría de la Computabilidad",
+            "codigo": 7949,
+            "correlativas": [
+                7713,
+                7791,
+                5912
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                5704
+            ]
+        },
+        {
+            "nombre": "Tecnología de Programación",
+            "codigo": 7951,
+            "correlativas": [
+                7655,
+                7713
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                5704,
+                5744,
+                7811
+            ]
+        },
+        {
+            "nombre": "Organización de Computadoras",
+            "codigo": 5744,
+            "correlativas": [
+                7791,
+                7655,
+                7713
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                5561,
+                5949
+            ]
+        },
+        {
+            "nombre": "Modelos de Software",
+            "codigo": 7821,
+            "correlativas": [
+                7791,
+                7713,
+                7714
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                7911,
+                7811,
+                7552
+            ]
+        },
+        {
+            "nombre": "Modelos Estadísticos para Ciencias de la Computación",
+            "codigo": 7820,
+            "correlativas": [
+                7791,
+                5551,
+                5793
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                7922
+            ]
+        },
+        {
+            "nombre": "Lógica para Ciencias de la Computación",
+            "codigo": 5704,
+            "correlativas": [
+                7951,
+                7949
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                5523,
+                7811
+            ]
+        },
+        {
+            "nombre": "Requerimientos de Sistemas",
+            "codigo": 7911,
+            "correlativas": [
+                7951,
+                7821,
+                7655
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                7811,
+                7680,
+                7527,
+                7552
+            ]
+        },
+        {
+            "nombre": "Arquitectura de Computadoras",
+            "codigo": 5561,
+            "correlativas": [
+                5744,
+                7791
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                5949,
+                7903
+            ]
+        },
+        {
+            "nombre": "Métodos Formales para Ingeniería de Software",
+            "codigo": 7811,
+            "correlativas": [
+                7911,
+                5704,
+                7951,
+                7821
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                7527,
+                7993
+            ]
+        },
+        {
+            "nombre": "Química IS",
+            "codigo": 6601,
+            "correlativas": [
+                5551
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Sistemas Operativos",
+            "codigo": 5949,
+            "correlativas": [
+                5561,
+                5744
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                7680,
+                7903
+            ]
+        },
+        {
+            "nombre": "Bases de Datos",
+            "codigo": 7552,
+            "correlativas": [
+                7911,
+                5704,
+                7821
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                7680,
+                7922
+            ]
+        },
+        {
+            "nombre": "Ingeniería de Aplicaciones de Web",
+            "codigo": 7680,
+            "correlativas": [
+                5949,
+                7552,
+                7911
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Arquitectura y Diseño de Sistemas",
+            "codigo": 7527,
+            "correlativas": [
+                7811,
+                7552,
+                7911
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                7891,
+                7993
+            ]
+        },
+        {
+            "nombre": "Algoritmos y Complejidad",
+            "codigo": 5523,
+            "correlativas": [
+                5704,
+                7951
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                7993
+            ]
+        },
+        {
+            "nombre": "Proyectos de Sistemas de Software",
+            "codigo": 7891,
+            "correlativas": [
+                7527,
+                7552
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                7668,
+                7534
+            ]
+        },
+        {
+            "nombre": "Verificación y Validación de Software",
+            "codigo": 7993,
+            "correlativas": [
+                5523,
+                7527,
+                7811
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                7668
+            ]
+        },
+        {
+            "nombre": "Física I",
+            "codigo": 3051,
+            "correlativas": [
+                5551,
+                5912
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                3058
+            ]
+        },
+        {
+            "nombre": "Gestión de Calidad en el Software",
+            "codigo": 7668,
+            "correlativas": [
+                7891,
+                7993,
+                7527
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Práctica Profesional Supervisada para Ingeniería de Software",
+            "codigo": 7886,
+            "correlativas": [],
+            "cuatrimestre": 1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Economía de la Empresa ISS",
+            "codigo": 2115,
+            "correlativas": [
+                7891
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Redes de Computadoras",
+            "codigo": 7903,
+            "correlativas": [
+                5949,
+                5561
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Auditoría de Sistemas",
+            "codigo": 7534,
+            "correlativas": [
+                7891
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Sistemas Inteligentes Artificiales",
+            "codigo": 7922,
+            "correlativas": [
+                7552,
+                7820
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Física II IS",
+            "codigo": 3058,
+            "correlativas": [
+                3051,
+                5552
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Proyecto Final",
+            "codigo": 7895,
+            "correlativas": [],
+            "cuatrimestre": -1,
+            "correlatividades": []
+        }
+    ]
+}

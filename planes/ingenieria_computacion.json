@@ -1,0 +1,402 @@
+{
+    "nombre": "Ingeniería en Computación",
+    "codigo": 2013,
+    "materias_totales": [
+        {
+            "nombre": "Elementos de Álgebra y de Geometría",
+            "codigo": 5912,
+            "correlativas": [],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                3051,
+                7791,
+                7713,
+                7949
+            ]
+        },
+        {
+            "nombre": "Análisis Matemático I",
+            "codigo": 5551,
+            "correlativas": [],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                3051,
+                5552,
+                6601,
+                7820
+            ]
+        },
+        {
+            "nombre": "Resolución de Problemas y Algoritmos",
+            "codigo": 5793,
+            "correlativas": [],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                7791,
+                7713,
+                7949
+            ]
+        },
+        {
+            "nombre": "Física I",
+            "codigo": 3051,
+            "correlativas": [
+                5551,
+                5912
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                3058,
+                2907,
+                2516
+            ]
+        },
+        {
+            "nombre": "Lenguajes Formales y Autómatas",
+            "codigo": 7791,
+            "correlativas": [
+                5912,
+                5793
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                7949,
+                5744,
+                5654,
+                7820,
+                2907
+            ]
+        },
+        {
+            "nombre": "Introducción a la Programación Orientada a Objetos",
+            "codigo": 7713,
+            "correlativas": [
+                5912,
+                5793
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                7655
+            ]
+        },
+        {
+            "nombre": "Teoría de la Computabilidad",
+            "codigo": 7949,
+            "correlativas": [
+                7791,
+                5912,
+                5793
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                5704
+            ]
+        },
+        {
+            "nombre": "Análisis Matemático II",
+            "codigo": 5552,
+            "correlativas": [
+                5551
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                5654,
+                3058
+            ]
+        },
+        {
+            "nombre": "Estructuras de Datos",
+            "codigo": 7655,
+            "correlativas": [
+                5551,
+                7713,
+                5793
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                5923,
+                7642
+            ]
+        },
+        {
+            "nombre": "Física II IS",
+            "codigo": 3058,
+            "correlativas": [
+                5552,
+                3051
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                7526,
+                2516
+            ]
+        },
+        {
+            "nombre": "Técnicas Digitales",
+            "codigo": 2907,
+            "correlativas": [
+                7791,
+                3051
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                7526,
+                2761
+            ]
+        },
+        {
+            "nombre": "Química IS",
+            "codigo": 6601,
+            "correlativas": [
+                5551
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Organización de Computadoras",
+            "codigo": 5744,
+            "correlativas": [
+                7655,
+                7791,
+                7713
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                7526,
+                5949
+            ]
+        },
+        {
+            "nombre": "Funciones de Variable Compleja",
+            "codigo": 5654,
+            "correlativas": [
+                5552
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                2516
+            ]
+        },
+        {
+            "nombre": "Arquitectura de Computadoras para Ingeniería",
+            "codigo": 7526,
+            "correlativas": [
+                5744,
+                3058,
+                2907
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                5949,
+                5786,
+                5583,
+                7919
+            ]
+        },
+        {
+            "nombre": "Modelos Estadísticos para Ciencias de la Computación",
+            "codigo": 7820,
+            "correlativas": [
+                7791,
+                5551,
+                5793
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                5946
+            ]
+        },
+        {
+            "nombre": "Conceptos de Análisis Numérico",
+            "codigo": 5923,
+            "correlativas": [
+                7655,
+                5552,
+                5912
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Elementos de Bases de Datos",
+            "codigo": 7642,
+            "correlativas": [
+                7655
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                7688,
+                5941,
+                7534
+            ]
+        },
+        {
+            "nombre": "Sistemas Operativos",
+            "codigo": 5949,
+            "correlativas": [
+                7526,
+                5744
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                5786,
+                7688,
+                5941,
+                7534,
+                7901
+            ]
+        },
+        {
+            "nombre": "Análisis de Circuitos Eléctricos",
+            "codigo": 2516,
+            "correlativas": [
+                3058,
+                5654
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                2761,
+                7919
+            ]
+        },
+        {
+            "nombre": "Redes y Teleprocesamiento",
+            "codigo": 5786,
+            "correlativas": [
+                5949,
+                7526
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                5941,
+                7901
+            ]
+        },
+        {
+            "nombre": "Introducción a la Electrónica",
+            "codigo": 2761,
+            "correlativas": [
+                2516,
+                2907
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                7919
+            ]
+        },
+        {
+            "nombre": "Computación Gráfica",
+            "codigo": 5583,
+            "correlativas": [
+                7526,
+                5552,
+                7655
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Ingeniería de Aplicaciones",
+            "codigo": 7688,
+            "correlativas": [
+                7642,
+                5949
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                2115
+            ]
+        },
+        {
+            "nombre": "Simulación",
+            "codigo": 5946,
+            "correlativas": [
+                5949,
+                7820
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Sistemas Embebidos",
+            "codigo": 7919,
+            "correlativas": [
+                2761,
+                5949,
+                2516,
+                7526
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Sistemas Distribuidos",
+            "codigo": 5941,
+            "correlativas": [
+                5786,
+                7642,
+                5949
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Auditoría de Sistemas",
+            "codigo": 7534,
+            "correlativas": [
+                5949,
+                7642
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Economía de la Empresa ISS",
+            "codigo": 2115,
+            "correlativas": [
+                7688
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Seguridad en Sistemas",
+            "codigo": 7901,
+            "correlativas": [
+                5786,
+                5949
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Proyecto Final",
+            "codigo": 7895,
+            "correlativas": [],
+            "cuatrimestre": -1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Optativa I",
+            "codigo": 9001,
+            "correlativas": [],
+            "cuatrimestre": 1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Optativa II",
+            "codigo": 9002,
+            "correlativas": [],
+            "cuatrimestre": -1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Práctica Profesional Supervisada",
+            "codigo": 7885,
+            "correlativas": [],
+            "cuatrimestre": -1,
+            "correlatividades": []
+        }
+    ]
+}

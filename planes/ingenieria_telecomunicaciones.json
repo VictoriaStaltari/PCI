@@ -1,0 +1,431 @@
+{
+    "nombre": "Ingeniería en Telecomunicaciones",
+    "codigo": 2023,
+    "materias_totales": [
+        {
+            "nombre": "Introducción a las Ingenierías IE",
+            "codigo": 2758,
+            "correlativas": [],
+            "cuatrimestre": 2,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Álgebra y Geometría",
+            "codigo": 5539,
+            "correlativas": [],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                5552,
+                3051,
+                5654,
+                3026,
+                2800,
+                5909
+            ]
+        },
+        {
+            "nombre": "Análisis Matemático I",
+            "codigo": 5551,
+            "correlativas": [],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                5552,
+                3051,
+                5654,
+                3026,
+                2800,
+                5909
+            ]
+        },
+        {
+            "nombre": "Química General para Ingeniería",
+            "codigo": 6323,
+            "correlativas": [],
+            "cuatrimestre": 1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Física I",
+            "codigo": 3051,
+            "correlativas": [
+                5539,
+                5551
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                3026,
+                2720,
+                3033,
+                3034
+            ]
+        },
+        {
+            "nombre": "Análisis Matemático II",
+            "codigo": 5552,
+            "correlativas": [
+                5539,
+                5551
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                5654,
+                3026,
+                2783,
+                5909,
+                2720
+            ]
+        },
+        {
+            "nombre": "Sistemas de Representación",
+            "codigo": 5415,
+            "correlativas": [],
+            "cuatrimestre": -1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Funciones de Variable Compleja",
+            "codigo": 5654,
+            "correlativas": [
+                5539,
+                5551,
+                5552
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                2502,
+                3033
+            ]
+        },
+        {
+            "nombre": "Electromagnetismo",
+            "codigo": 3026,
+            "correlativas": [
+                3051,
+                5539,
+                5551,
+                5552
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                2720,
+                2502,
+                3033,
+                3034
+            ]
+        },
+        {
+            "nombre": "Principios de Computadoras I",
+            "codigo": 2800,
+            "correlativas": [
+                5539,
+                5551
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                2783,
+                2559,
+                2757
+            ]
+        },
+        {
+            "nombre": "Fundamentos de Electrotecnia",
+            "codigo": 2720,
+            "correlativas": [
+                3026,
+                3051,
+                5552
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                2502,
+                2803,
+                2565
+            ]
+        },
+        {
+            "nombre": "Métodos y Simulación Numérica en Ingeniería Eléctrica",
+            "codigo": 2783,
+            "correlativas": [
+                2800,
+                5552
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                2502,
+                2763,
+                2503
+            ]
+        },
+        {
+            "nombre": "Probabilidad, Variable Aleatoria y Estadística",
+            "codigo": 5909,
+            "correlativas": [
+                5539,
+                5551,
+                5552
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                2718,
+                2781
+            ]
+        },
+        {
+            "nombre": "Diseño de Circuitos Lógicos",
+            "codigo": 2559,
+            "correlativas": [
+                2800
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                2833
+            ]
+        },
+        {
+            "nombre": "Análisis de Circuitos y Sistemas",
+            "codigo": 2502,
+            "correlativas": [
+                2720,
+                2783,
+                5654,
+                3026
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                2803,
+                2718,
+                2565,
+                2503
+            ]
+        },
+        {
+            "nombre": "Elementos de Física del Estado Sólido",
+            "codigo": 3033,
+            "correlativas": [
+                5909,
+                5654,
+                3026,
+                3051
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                2565,
+                2503
+            ]
+        },
+        {
+            "nombre": "Elementos de Termodinámica",
+            "codigo": 3034,
+            "correlativas": [
+                3026,
+                3051
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Procesamiento Digital de Señales",
+            "codigo": 2803,
+            "correlativas": [
+                2502,
+                2720
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                2763,
+                2804
+            ]
+        },
+        {
+            "nombre": "Fundamentos de Sistemas de Comunicaciones",
+            "codigo": 2718,
+            "correlativas": [
+                2502,
+                5909
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                2763,
+                2812
+            ]
+        },
+        {
+            "nombre": "Dispositivos Semiconductores",
+            "codigo": 2565,
+            "correlativas": [
+                2502,
+                3033,
+                2720
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                2503,
+                2504
+            ]
+        },
+        {
+            "nombre": "Técnicas de Comunicación Oral y Escrita para Ingenieros",
+            "codigo": 2902,
+            "correlativas": [],
+            "cuatrimestre": -1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Proyecto ITEL-I",
+            "codigo": 2814,
+            "correlativas": [],
+            "cuatrimestre": 2,
+            "correlatividades": [
+                2817
+            ]
+        },
+        {
+            "nombre": "Introducción a las Comunicaciones Digitales",
+            "codigo": 2763,
+            "correlativas": [
+                2803,
+                2718
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                2530
+            ]
+        },
+        {
+            "nombre": "Propagación y Radiación",
+            "codigo": 2812,
+            "correlativas": [
+                2718
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                2512,
+                2531
+            ]
+        },
+        {
+            "nombre": "Análisis y Diseño de Circuitos Analógicos I",
+            "codigo": 2503,
+            "correlativas": [
+                2565,
+                2502,
+                3033,
+                2783
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": [
+                2504,
+                2506,
+                2829
+            ]
+        },
+        {
+            "nombre": "Redes de Datos en Telecomunicaciones",
+            "codigo": 2833,
+            "correlativas": [
+                2559
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                2832,
+                2531
+            ]
+        },
+        {
+            "nombre": "Análisis y Diseño de Circuitos Analógicos II",
+            "codigo": 2504,
+            "correlativas": [
+                2503,
+                2565
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                2651
+            ]
+        },
+        {
+            "nombre": "Antenas",
+            "codigo": 2512,
+            "correlativas": [
+                2812
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": [
+                2532
+            ]
+        },
+        {
+            "nombre": "Legislación, Seguridad e Higiene Industrial",
+            "codigo": 5323,
+            "correlativas": [],
+            "cuatrimestre": -1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Diseño de Circuitos en Radiofrecuencias",
+            "codigo": 2651,
+            "correlativas": [
+                2504
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Redes Avanzadas",
+            "codigo": 2832,
+            "correlativas": [
+                2833
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Comunicaciones Celulares",
+            "codigo": 2530,
+            "correlativas": [
+                2763,
+                2833
+            ],
+            "cuatrimestre": 1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Economía de la Empresa",
+            "codigo": 2106,
+            "correlativas": [],
+            "cuatrimestre": -1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Comunicaciones Ópticas",
+            "codigo": 2531,
+            "correlativas": [
+                2812,
+                2833
+            ],
+            "cuatrimestre": -1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Proyecto ITEL-II",
+            "codigo": 2817,
+            "correlativas": [],
+            "cuatrimestre": -1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Optativa I",
+            "codigo": 9001,
+            "correlativas": [],
+            "cuatrimestre": 1,
+            "correlatividades": []
+        },
+        {
+            "nombre": "Optativa II",
+            "codigo": 9002,
+            "correlativas": [],
+            "cuatrimestre": -1,
+            "correlatividades": []
+        }
+    ]
+}

@@ -47,6 +47,3 @@ class Carrera:
 
     def materias_faltantes(self, materias_cursadas):
         return [materia for materia in self.materias_totales if materia not in materias_cursadas]
-
-
-# No nos conviene usar clases 
