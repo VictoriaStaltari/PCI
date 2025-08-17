@@ -11,11 +11,6 @@ def home():
 def plan_carrera(nombre_carrera):
     return render_template('carrera.html', carrera=nombre_carrera)
 
-# Ruta que se activa al hacer clic en el botón
-@app.route('/carrera/<nombre_carrera>', methods=['POST'])
-def procesar(nombre_carrera):
-    dato = request.form['']
-    
 @app.route('/carrera/<nombre_carrera>/planificador')
 def planificador(nombre_carrera):
     materias_cursadas = request.form.getlist('materiasCursadas')
