@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, json
 from clases import Carrera, Materia
-from func import priorizar_materias
+from func import priorizar_materias, organizar
 
 app = Flask(__name__)
 
