@@ -8,3 +8,4 @@ def priorizar_materias(materias_faltantes):
             1 if m.cuatrimestre == 0 else 0, m.cuatrimestre
             )
     )
+    
