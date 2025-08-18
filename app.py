@@ -23,6 +23,29 @@ def planificador(nombre_carrera):
     
     # Aquí se procesaría la lógica para planificar las materias
     # Por ejemplo, se podría llamar a una función que use las clases Carrera y Materia
+   
+    def ajustar_cuatriimestres(nro_materias_cuatrimeste, materias_faltantes): 
+    i = 0 
+    salida_final = [[]]
+
+    while len(materias_faltantes) > 0: 
+        salida, materias_faltantes = organizar(nro_materias_cuatrimeste, materias_faltantes)  # salida es lista de listas
+        
+        for cuatri in salida:  # 'cuatri' es una lista de materias
+            if i >= len(salida_final):  # Si no existe la sublista, la agregamos
+                salida_final.append([])
+            
+            # Intentamos agregar materias a la sublista actual
+            while cuatri:  # mientras queden materias en esta lista de cuatrimestre
+                espacio = nro_materias_cuatrimeste - len(salida_final[i])
+                if espacio > 0:
+                    # Agregamos hasta llenar el cuatrimestre actual
+                    salida_final[i].extend(cuatri[:espacio])
+                    cuatri = cuatri[espacio:]  # removemos las materias agregadas
+                if len(salida_final[i]) >= nro_materias_cuatrimeste:
+                    i += 1  # pasamos al siguiente cuatrimestre
+
+    return salida_final
     
     # 1) Traer el plan
     # 2) Convertirlo a diccionario y dsp a clases
