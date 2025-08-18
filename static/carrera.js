@@ -1,4 +1,10 @@
-// Traer del servidor
+// Obtener el nombre de la carrera desde la URL
+const path = window.location.pathname; 
+// Ejemplo: "/carrera/ingenieria_electronica"
+const carrera = path.split("/")[2];
+console.log(carrera); // "ingenieria_electronica"
+
+
 const materias = [
     { nombre: "Matemática", codigo: "MAT101" },
     { nombre: "Física", codigo: "FIS101" }
@@ -24,15 +30,11 @@ const form = document.querySelector('form');
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     const materias_cursadas = Array.from(document.querySelectorAll('.materia-checkbox:checked')).map(checkbox => checkbox.name);
-    const cant_materias = document.getElementById('materiasPorCuatrimestre').value;
-    const cantMin_materias = document.getElementById('materiasMinimas').value;
-    const cantMax_materias = document.getElementById('materiasMaximas').value;
+    const cant_materias = document.getElementById('materiasPorCuatrimestre').value
 
     const data = {
         materias: materias_cursadas,
-        cant_materias,
-        cantMin_materias,
-        cantMax_materias
+        cant_materias
     };
 
     localStorage.setItem('datos_especificos', JSON.stringify(data));
