@@ -7,9 +7,19 @@
 </head>
 <body>
     <div>
-        <h1>Plan de {{carrera}}</h1>
-        <h2>1 cuatrimestre</h2>
-        
+        <h1>Plan de {{ carrera }}</h1>
+        <p>Materias aprobadas: {{ materias_aprobadas }}</p>
+        <p>Materias por cuatrimestre: {{ cant_materias }}</p>
+        <p>Cuatrimestre actual: {{ cuatrimestre_actual }}</p>
+        <!-- Aquí se mostrarán los cuatrimestres planificados -->
+        {% for cuatri in cuatrimestres_organizados %}
+        <h2>{{ loop.index }}º cuatrimestre</h2>
+        <ul>
+            {% for materia in cuatri %}
+            <li>{{ materia }}</li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
     </div>
 </body>
 </html>

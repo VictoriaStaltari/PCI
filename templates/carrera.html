@@ -11,22 +11,29 @@
         <h1>Comienza a planificar tu cuatrimestre de {{ carrera }}!</h1>
     </header>
     <main>
-        <form action="/carrera/{{ carrera }}" method="post">
+        <form action="/carrera/{{ carrera }}/planificador" method="post">
             <h2>Materias</h2>
             <p>Ingresa las materias que ya has cursado:</p>
-            <div id="materiasDiv"></div>
-            <h2>Cuantas materias por cuatrimestre desea cursar?</h2>
-            <div class="materias">
-                <p>Cantidad preferible:</p><input type="number" name="materiasPorCuatrimestre" id="materiasPorCuatrimestre" min="1" max="8">
+            <div>
+                {% for materia in materias %}
+                <div>
+                    <input type="checkbox" id="materia-{{ loop.index }}" name="materias_aprobadas" value="{{ materia['codigo'] }}">
+                    <label for="materia-{{ loop.index }}">{{ materia['nombre'] }}</label>
+                </div>
+                {% endfor %}
             </div>
-            <div class="cuatrimestre">
-                <p>En que cuatrimestre se encuentra?</p>
-                <button>1er cuatrimestre</button>
-                <button>2do cuatrimestre</button>
+            <h2>¿Cuántas materias por cuatrimestre desea cursar?</h2>
+            <div class="materias">
+                <p>Cantidad preferible:</p>
+                <input type="number" name="cant_materias" id="cant_materias" min="1" max="8" required>
+            </div>
+            <h2>¿En qué cuatrimestre estás actualmente?</h2>
+            <div>
+                <label><input type="radio" name="cuatrimestre_actual" value="1" required> Primero</label>
+                <label><input type="radio" name="cuatrimestre_actual" value="2"> Segundo</label>
             </div>
             <button type="submit">Planificar</button>
         </form>
     </main>
-    <script src="/static/carrera.js"></script>
 </body>
 </html>
