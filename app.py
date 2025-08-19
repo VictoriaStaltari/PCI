@@ -9,53 +9,41 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
+
 @app.route('/carrera/<nombre_carrera>')
 def plan_carrera(nombre_carrera):
     nombreJSON = f'planes/{nombre_carrera}.json'
     with open(nombreJSON, 'r') as f:
         plan_carrera = json.load(f)
-    return render_template('carrera.html', carrera=nombre_carrera)
 
-@app.route('/carrera/<nombre_carrera>/planificador')
+    materias = plan_carrera.get('materias_totales', [])
+    return render_template('carrera.html', carrera=nombre_carrera, materias=materias)
+
+
+@app.route('/carrera/<nombre_carrera>/planificador', methods=['POST'])
 def planificador(nombre_carrera):
-    materias_cursadas = request.form.getlist('materiasCursadas')
-    materias_por_cuatrimestre = int(request.form['materiasPorCuatrimestre'])
-    
-    # Aquí se procesaría la lógica para planificar las materias
-    # Por ejemplo, se podría llamar a una función que use las clases Carrera y Materia
+    materias_aprobadas = request.form.getlist('materias_aprobadas')
+    cant_materias = int(request.form['cant_materias'])
+    cuatrimestre_actual = int(request.form['cuatrimestre_actual'])
 
-    # def ajustar_cuatriimestres(nro_materias_cuatrimeste, materias_faltantes): 
-    #     i = 0 
-    #     salida_final = [[]]
+    nombreJSON = f'planes/{nombre_carrera}.json'
+    with open(nombreJSON, 'r') as f:
+        plan_carrera = json.load(f)
 
-    #     while len(materias_faltantes) > 0: 
-    #         salida, materias_faltantes = organizar(nro_materias_cuatrimeste, materias_faltantes)  # salida es lista de listas
-            
-    #         for cuatri in salida:  # 'cuatri' es una lista de materias
-    #             if i >= len(salida_final):  # Si no existe la sublista, la agregamos
-    #                 salida_final.append([])
-                
-    #             # Intentamos agregar materias a la sublista actual
-    #             while cuatri:  # mientras queden materias en esta lista de cuatrimestre
-    #                 espacio = nro_materias_cuatrimeste - len(salida_final[i])
-    #                 if espacio > 0:
-    #                     # Agregamos hasta llenar el cuatrimestre actual
-    #                     salida_final[i].extend(cuatri[:espacio])
-    #                     cuatri = cuatri[espacio:]  # removemos las materias agregadas
-    #                 if len(salida_final[i]) >= nro_materias_cuatrimeste:
-    #                     i += 1  # pasamos al siguiente cuatrimestre
-
-    #     return salida_final
-    
-    # 1) Traer el plan
-    # 2) Convertirlo a diccionario y dsp a clases
-    # 3) la lista de materias aprobadas
-    # 4) materias faltantes, lista
-    # 5) ordenar la lista
-    # 6) armar los cuatrimestres
-    
+    # Aquí se procesaría la lógica para planificar las materias.
+    # Se utilizarán las materias aprobadas, la cantidad de materias por cuatrimestre
+    # y el plan de estudio obtenido del archivo JSON.
     cuatrimestres_organizados = []
-    return render_template('planificador.html', cuatrimestres_organizados=cuatrimestres_organizados)
+
+    return render_template(
+        'planificador.html',
+        carrera=nombre_carrera,
+        materias_aprobadas=materias_aprobadas,
+        cant_materias=cant_materias,
+        cuatrimestre_actual=cuatrimestre_actual,
+        plan=plan_carrera,
+        cuatrimestres_organizados=cuatrimestres_organizados,
+    )
 
 if __name__ == '__main__':
     app.run(debug=True)
