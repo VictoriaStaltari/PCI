@@ -13,7 +13,7 @@ def home():
 @app.route('/carrera/<nombre_carrera>')
 def plan_carrera(nombre_carrera):
     nombreJSON = f'planes/{nombre_carrera}.json'
-    with open(nombreJSON, 'r') as f:
+    with open(nombreJSON, 'r', encoding='utf-8') as f:
         plan_carrera = json.load(f)
 
     materias = plan_carrera.get('materias_totales', [])
