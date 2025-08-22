@@ -11,8 +11,6 @@ def priorizar_materias(materias_faltantes):
     )
     
 
-
-
 def organizar(nro_materias_cuatrimeste, materias_faltantes, cuatri_actual):
     """Organiza un cuatrimestre segun el cuatrimestre actual y el nro de materias por cuatrimestre
 
@@ -34,25 +32,14 @@ def organizar(nro_materias_cuatrimeste, materias_faltantes, cuatri_actual):
             i += 1
     return salida, materias_faltantes
 
-def ajustar_cuatriimestres(materias_faltantes, nro_materias_cuatrimeste, cuatri_actual): 
+def ajustar_cuatrimestres(materias_faltantes, nro_materias_cuatrimeste, cuatri_actual): 
     i = 0 
-    salida_final = [[]]
+    cuatrimestres_organizados = [] #Lista de listas(cuatrimestres)
 
     while len(materias_faltantes) > 0: 
-        salida, materias_faltantes = organizar(nro_materias_cuatrimeste, materias_faltantes)  # salida es lista de listas
-        
-        for cuatri in salida:  # 'cuatri' es una lista de materias
-            if i >= len(salida_final):  # Si no existe la sublista, la agregamos
-                salida_final.append([])
-            
-            # Intentamos agregar materias a la sublista actual
-            while cuatri:  # mientras queden materias en esta lista de cuatrimestre
-                espacio = nro_materias_cuatrimeste - len(salida_final[i])
-                if espacio > 0:
-                    # Agregamos hasta llenar el cuatrimestre actual
-                    salida_final[i].extend(cuatri[:espacio])
-                    cuatri = cuatri[espacio:]  # removemos las materias agregadas
-                if len(salida_final[i]) >= nro_materias_cuatrimeste:
-                    i += 1  # pasamos al siguiente cuatrimestre
+        cuatrimestre, materias_faltantes = organizar(nro_materias_cuatrimeste, materias_faltantes, cuatri_actual)  
+        # 1 cuatrimestre y materias que faltan
+        cuatrimestres_organizados.append(cuatrimestre)
+        cuatri_actual = cuatri_actual*(-1)
 
-    return salida_final
+    return cuatrimestres_organizados

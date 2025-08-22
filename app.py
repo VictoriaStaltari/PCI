@@ -1,10 +1,12 @@
 from flask import Flask, render_template, request, json
 from clases import Carrera, Materia
-from func import priorizar_materias, organizar
+from func import priorizar_materias, organizar, ajustar_cuatrimestres
 
 app = Flask(__name__)
 
 # Ruta principal: muestra la página inicial
+# Redirige hacia la ruta de la carrera
+
 @app.route('/')
 def home():
     return render_template('index.html')
@@ -14,9 +16,9 @@ def home():
 def plan_carrera(nombre_carrera):
     nombreJSON = f'planes/{nombre_carrera}.json'
     with open(nombreJSON, 'r', encoding='utf-8') as f:
-        plan_carrera = json.load(f)
+        plan_carrera = json.load(f) # Carga el plan de carrera desde el archivo JSON
 
-    materias = plan_carrera.get('materias_totales', [])
+    materias = plan_carrera.get('materias_totales', []) #Pide la lista de materias segun el plan
     return render_template('carrera.html', carrera=nombre_carrera, materias=materias)
 
 
@@ -30,14 +32,19 @@ def planificador(nombre_carrera):
     with open(nombreJSON, 'r') as f:
         plan_carrera = json.load(f)
 
-    # Aquí se procesaría la lógica para planificar las materias.
-    # Se utilizarán las materias aprobadas, la cantidad de materias por cuatrimestre
-    # y el plan de estudio obtenido del archivo JSON.
-    cuatrimestres_organizados = []
+    
+    carrera = Carrera.from_dict(plan_carrera)
+    
+    materias_falt_ordenadas_prioridad = priorizar_materias(carrera.materias_faltantes(materias_aprobadas))
 
+    cuatrimestres_organizados = ajustar_cuatrimestres(
+        materias_falt_ordenadas_prioridad,
+        cant_materias,
+        cuatrimestre_actual
+    )
+    
     return render_template(
         'planificador.html',
-        carrera=nombre_carrera,
         materias_aprobadas=materias_aprobadas,
         cant_materias=cant_materias,
         cuatrimestre_actual=cuatrimestre_actual,
