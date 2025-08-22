@@ -24,11 +24,7 @@ class Materia:
         return puede_hacerse
     
     def es_cursable(self, cuatrimestre_actual):
-        return (self.cuatrimestre == cuatrimestre_actual)or(self.cuatrimestre == 0)or(self.cuatrimestre==2*cuatrimestre_actual)
-    # Si el cuatrimestre actual es igual al que se da.
-    # Si el cuatrimestre de la materia es 0 lo cual significa que se puede cursar en cualquier cuatrimestre.
-    # Si el cuatrimestre de la materia es el doble del cuatrimestre actual, es decir si el cuatrimestre actual es 1, el primero y la materia es anual (cuatrimestre de la materia aparece como 2)
-    
+        return (self.cuatrimestre == cuatrimestre_actual)or(self.cuatrimestre == 0)
     
 class Carrera:
     def __init__(self, nombre, codigo, materias_totales):

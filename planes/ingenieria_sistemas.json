@@ -6,7 +6,7 @@
             "nombre": "Resolución de Problemas y Algoritmos",
             "codigo": 5793,
             "correlativas": [],
-            "cuatrimestre": 0,
+            "cuatrimestre": 1,
             "correlatividades": [
                 7713,
                 7791
@@ -16,7 +16,7 @@
             "nombre": "Elementos de Álgebra y de Geometría",
             "codigo": 5912,
             "correlativas": [],
-            "cuatrimestre": 0,
+            "cuatrimestre": 1,
             "correlatividades": [
                 7713,
                 7791,
@@ -27,7 +27,7 @@
             "nombre": "Análisis Matemático I",
             "codigo": 5551,
             "correlativas": [],
-            "cuatrimestre": 0,
+            "cuatrimestre": 1,
             "correlatividades": [
                 5552,
                 7820,
@@ -42,7 +42,7 @@
                 5793,
                 5912
             ],
-            "cuatrimestre": 0,
+            "cuatrimestre": -1,
             "correlatividades": [
                 7655,
                 7949,
@@ -58,7 +58,7 @@
                 5793,
                 5912
             ],
-            "cuatrimestre": 0,
+            "cuatrimestre": -1,
             "correlatividades": [
                 7949,
                 5744,
@@ -70,7 +70,7 @@
             "nombre": "Introducción a la Ingeniería de Software",
             "codigo": 7714,
             "correlativas": [],
-            "cuatrimestre": 0,
+            "cuatrimestre": -1,
             "correlatividades": [
                 7821
             ]
@@ -82,7 +82,7 @@
                 5912,
                 5551
             ],
-            "cuatrimestre": 0,
+            "cuatrimestre": 1,
             "correlatividades": [
                 7820,
                 3058
@@ -96,7 +96,7 @@
                 7713,
                 5793
             ],
-            "cuatrimestre": 0,
+            "cuatrimestre": 1,
             "correlatividades": [
                 7951
             ]
