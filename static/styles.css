@@ -1,0 +1,30 @@
+button{
+    background-color: #2600ff; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 200px;
+    height: 60px;
+}
+button:hover {
+    background-color: #140088;
+    transform: scale(1.05);
+}
+div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.buttonsContainer {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;   
+}

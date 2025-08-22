@@ -6,7 +6,7 @@
             "nombre": "Álgebra y Geometría",
             "codigo": 5539,
             "correlativas": [],
-            "cuatrimestre": 1,
+            "cuatrimestre": 0,
             "correlatividades": [
                 3051,
                 5552,
@@ -20,7 +20,7 @@
             "nombre": "Análisis Matemático I",
             "codigo": 5551,
             "correlativas": [],
-            "cuatrimestre": 1,
+            "cuatrimestre": 0,
             "correlatividades": [
                 3051,
                 5552,
@@ -35,7 +35,7 @@
             "nombre": "Química General para Ingeniería",
             "codigo": 6323,
             "correlativas": [],
-            "cuatrimestre": 1,
+            "cuatrimestre": 0,
             "correlatividades": []
         },
         {
@@ -52,7 +52,7 @@
                 5539,
                 5551
             ],
-            "cuatrimestre": -1,
+            "cuatrimestre": 0,
             "correlatividades": [
                 3026,
                 2720,
@@ -67,7 +67,7 @@
                 5539,
                 5551
             ],
-            "cuatrimestre": -1,
+            "cuatrimestre": 0,
             "correlatividades": [
                 5654,
                 3026,
@@ -80,7 +80,7 @@
             "nombre": "Sistemas de Representación",
             "codigo": 5415,
             "correlativas": [],
-            "cuatrimestre": -1,
+            "cuatrimestre": 0,
             "correlatividades": []
         },
         {
@@ -91,7 +91,7 @@
                 5551,
                 5552
             ],
-            "cuatrimestre": 1,
+            "cuatrimestre": 0,
             "correlatividades": [
                 3033,
                 2502
@@ -106,7 +106,7 @@
                 5551,
                 5552
             ],
-            "cuatrimestre": 1,
+            "cuatrimestre": 0,
             "correlatividades": [
                 2783,
                 2720,
@@ -123,7 +123,7 @@
                 5539,
                 5551
             ],
-            "cuatrimestre": 1,
+            "cuatrimestre": 0,
             "correlatividades": [
                 2783,
                 2559,
@@ -138,7 +138,7 @@
                 2800,
                 5552
             ],
-            "cuatrimestre": -1,
+            "cuatrimestre": 0,
             "correlatividades": [
                 2502,
                 2717,
