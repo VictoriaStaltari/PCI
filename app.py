@@ -57,11 +57,12 @@ def planificador(nombre_carrera):
 
     return render_template(
         'planificador.html',
+        carrera=nombre_carrera,
         materias_aprobadas=materias_aprobadas,
         cant_materias=cant_materias,
         cuatrimestre_actual=cuatrimestre_actual,
         plan=plan_carrera,
-        nombres_materias=nombres_materias
+        cuatrimestres_organizados=nombres_materias
     )
 
 if __name__ == '__main__':
