@@ -407,7 +407,12 @@
         {
             "nombre": "Proyecto Final",
             "codigo": 7895,
-            "correlativas": [],
+            "correlativas": [
+                3058,
+                7922,
+                7534,
+                7903
+            ],
             "cuatrimestre": -1,
             "correlatividades": []
         }

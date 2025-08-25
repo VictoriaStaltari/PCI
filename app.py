@@ -29,27 +29,39 @@ def planificador(nombre_carrera):
     cuatrimestre_actual = int(request.form['cuatrimestre_actual'])
 
     nombreJSON = f'planes/{nombre_carrera}.json'
-    with open(nombreJSON, 'r') as f:
+    with open(nombreJSON, 'r', encoding="UTF-8") as f:
         plan_carrera = json.load(f)
 
-    
     carrera = Carrera.from_dict(plan_carrera)
-    
-    materias_falt_ordenadas_prioridad = priorizar_materias(carrera.materias_faltantes(materias_aprobadas))
+        
+    materias_aprobadas_obj = [materia for materia in carrera.materias_totales if materia.codigo in materias_aprobadas]
+
+    materias_falt_ordenadas_prioridad = priorizar_materias(
+        carrera.materias_faltantes(materias_aprobadas_obj)
+    )
 
     cuatrimestres_organizados = ajustar_cuatrimestres(
         materias_falt_ordenadas_prioridad,
         cant_materias,
-        cuatrimestre_actual
+        cuatrimestre_actual,
+        materias_aprobadas_obj
     )
+    print(cuatrimestres_organizados)
     
+    nombres_materias= []
+    for cuatri in cuatrimestres_organizados:
+        lista_materias = []
+        for materia in cuatri:
+            lista_materias.append(materia.nombre)
+        nombres_materias.append(lista_materias)
+
     return render_template(
         'planificador.html',
         materias_aprobadas=materias_aprobadas,
         cant_materias=cant_materias,
         cuatrimestre_actual=cuatrimestre_actual,
         plan=plan_carrera,
-        cuatrimestres_organizados=cuatrimestres_organizados,
+        nombres_materias=nombres_materias
     )
 
 if __name__ == '__main__':

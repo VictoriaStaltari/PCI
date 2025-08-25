@@ -400,21 +400,29 @@
         {
             "nombre": "Proyecto",
             "codigo": 2815,
-            "correlativas": [],
+            "correlativas": [
+                9001,
+                9002
+            ],
             "cuatrimestre": -1,
             "correlatividades": []
         },
         {
             "nombre": "Optativa I",
             "codigo": 9001,
-            "correlativas": [],
+            "correlativas": [
+                2946,
+                2731,
+                2813,
+                2593
+            ],
             "cuatrimestre": 1,
             "correlatividades": []
         },
         {
             "nombre": "Optativa II",
             "codigo": 9002,
-            "correlativas": [],
+            "correlativas": [9001],
             "cuatrimestre": -1,
             "correlatividades": []
         }

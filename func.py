@@ -11,7 +11,7 @@ def priorizar_materias(materias_faltantes):
     )
     
 
-def organizar(nro_materias_cuatrimeste, materias_faltantes, cuatri_actual):
+def organizar(nro_materias_cuatrimeste, materias_faltantes, cuatri_actual, materias_aprobadas):
     """Organiza un cuatrimestre segun el cuatrimestre actual y el nro de materias por cuatrimestre
 
     Args:
@@ -24,20 +24,23 @@ def organizar(nro_materias_cuatrimeste, materias_faltantes, cuatri_actual):
     """
     salida = []  # Lista de cuatrimestres con materias cursables
     i = 0
-    while len(salida)<nro_materias_cuatrimeste and len(materias_faltantes)>0 and i<len(materias_faltantes):
-        if materias_faltantes[i].es_cursable(cuatri_actual):
+    while (len(salida)<nro_materias_cuatrimeste) and (len(materias_faltantes)>0) and (i<len(materias_faltantes)):
+
+        # Si la materia es cursable en el cuatrimestre actual y cumple con las correlativas
+        if (materias_faltantes[i].es_cursable(cuatri_actual))and(materias_faltantes[i].control_correlativas(materias_aprobadas)):
             materia = materias_faltantes.pop(i)
             salida.append(materia)
+            materias_aprobadas.append(materia)
         else:
             i += 1
-    return salida, materias_faltantes
+    return salida, materias_faltantes, materias_aprobadas
 
-def ajustar_cuatrimestres(materias_faltantes, nro_materias_cuatrimeste, cuatri_actual): 
+def ajustar_cuatrimestres(materias_faltantes, nro_materias_cuatrimeste, cuatri_actual, materias_aprobadas): 
     i = 0 
     cuatrimestres_organizados = [] #Lista de listas(cuatrimestres)
 
     while len(materias_faltantes) > 0: 
-        cuatrimestre, materias_faltantes = organizar(nro_materias_cuatrimeste, materias_faltantes, cuatri_actual)  
+        cuatrimestre, materias_faltantes, materias_aprobadas = organizar(nro_materias_cuatrimeste, materias_faltantes, cuatri_actual,materias_aprobadas)  
         # 1 cuatrimestre y materias que faltan
         cuatrimestres_organizados.append(cuatrimestre)
         cuatri_actual = cuatri_actual*(-1)

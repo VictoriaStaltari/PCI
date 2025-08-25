@@ -13,7 +13,8 @@ class Materia:
             nombre=data['nombre'],
             codigo=data['codigo'],
             correlativas=data['correlativas'],
-            cuatrimestre=data['cuatrimestre']
+            cuatrimestre=data['cuatrimestre'],
+            correlatividades=data['correlatividades']
         )
 
     def control_correlativas(self, materias_cursadas):
@@ -25,6 +26,7 @@ class Materia:
     
     def es_cursable(self, cuatrimestre_actual):
         return (self.cuatrimestre == cuatrimestre_actual)or(self.cuatrimestre == 0)or(self.cuatrimestre==2*cuatrimestre_actual)
+    
     # Si el cuatrimestre actual es igual al que se da.
     # Si el cuatrimestre de la materia es 0 lo cual significa que se puede cursar en cualquier cuatrimestre.
     # Si el cuatrimestre de la materia es el doble del cuatrimestre actual, es decir si el cuatrimestre actual es 1, el primero y la materia es anual (cuatrimestre de la materia aparece como 2)
@@ -38,7 +40,7 @@ class Carrera:
     
     @classmethod
     def from_dict(cls, data):
-        materias = [Materia.from_dict(m) for m in data['materiasTotales']]
+        materias = [Materia.from_dict(m) for m in data['materias_totales']]
         return cls(
             nombre=data['nombre'],
             codigo=data['codigo'],
