@@ -1,3 +1,4 @@
+import copy
 class Materia:
     def __init__(self, nombre, codigo, correlativas, correlatividades, cuatrimestre):
         self.nombre = nombre
@@ -20,7 +21,7 @@ class Materia:
     def control_correlativas(self, materias_cursadas):
         puede_hacerse = True
         for correlativa in self.correlativas:
-            if correlativa not in materias_cursadas:
+            if str(correlativa) not in materias_cursadas:
                 puede_hacerse = False
         return puede_hacerse
     
@@ -52,4 +53,12 @@ class Carrera:
             self.materias_totales.append(materia)
 
     def materias_faltantes(self, materias_cursadas):
-        return [materia for materia in self.materias_totales if materia not in materias_cursadas]
+        materias_faltantes = self.materias_totales
+        lista_aux = []
+        for codigo in materias_cursadas:
+            codigo = int(codigo)
+            for materia in materias_faltantes:
+                if materia.codigo == codigo:
+                    lista_aux.append(materia)
+        materias_faltantes = [m for m in materias_faltantes if m not in lista_aux]
+        return materias_faltantes

@@ -420,10 +420,10 @@
             "nombre": "Optativa I",
             "codigo": 9001,
             "correlativas": [
-                2946,
-                2731,
-                2813,
-                2593
+                2651,
+                2832,
+                2812,
+                2531
             ],
             "cuatrimestre": 1,
             "correlatividades": []

@@ -7,16 +7,16 @@
     <title>PCI</title>
 </head>
 <body>
-    <header>
-        <h1>Comienza a planificar tu cuatrimestre de {{ carrera }}!</h1>
+    <header class="{{ carrera }}">
+        <h1>Comienza a planificar tu cuatrimestre de {{ titulo_carrera }}!</h1>
     </header>
     <main>
         <form action="/carrera/{{ carrera }}/planificador" method="post">
             <h2>Materias</h2>
             <p>Ingresa las materias que ya has cursado:</p>
-            <div>
+            <div class="materiasContainer">
                 {% for materia in materias %}
-                <div>
+                <div class="materia_input {{ carrera }}">
                     <input type="checkbox" id="materia-{{ loop.index }}" name="materias_aprobadas" value="{{ materia['codigo'] }}">
                     <label for="materia-{{ loop.index }}">{{ materia['nombre'] }}</label>
                 </div>

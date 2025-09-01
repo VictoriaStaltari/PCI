@@ -1,5 +1,61 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: repeating-linear-gradient(rgb(19, 6, 204),white);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    padding-bottom: 70px;
+}
+header.ingenieria_sistemas{
+    background-image: linear-gradient(#ee2222, white);
+}
+header.ingenieria_electronica{
+    background-image: linear-gradient(#eebe22, white);
+}
+header.ingenieria_electricista{
+    background-image: linear-gradient(#7eee22, white);
+}
+header.ingenieria_computacion{
+    background-image: linear-gradient(#22b4ee, white);
+}
+header.ingenieria_telecomunicaciones{
+    background-image: linear-gradient(#f330a2, white);
+}
+h1{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+h2{
+    color: #333;
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+#ing_sistemas{
+    background-color: #ee2222;
+}
+#ing_electronica{
+    background-color: #eebe22;
+}
+#ing_electricista{
+    background-color: #7eee22;
+}
+#ing_computacion{
+    background-color: #22b4ee;
+}
+#ing_telecomunicaciones{
+    background-color: #f330a2;
+}
+button:hover {
+    background-color: #3f3f3f;
+    transform: scale(1.05);
+}
 button{
-    background-color: #2600ff; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -13,10 +69,6 @@ button{
     width: 200px;
     height: 60px;
 }
-button:hover {
-    background-color: #140088;
-    transform: scale(1.05);
-}
 div {
     display: flex;
     align-items: center;
@@ -27,4 +79,35 @@ div {
     justify-content: center;
     align-items: center;
     margin-top: 20px;   
+}
+.materiasContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.materia_input{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 7px;
+    margin: 3px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.materia_input.ingenieria_sistemas{
+    background-color: #ee2222;
+}
+div.ingenieria_electronica{
+    background-color: #eebe22;
+}
+.materia_input.ingenieria_electricista{
+    background-color: #7eee22;
+}
+.materia_input.ingenieria_computacion{
+    background-color: #22b4ee;
+}
+div.ingenieria_telecomunicaciones{
+    background-color: #f330a2;
 }

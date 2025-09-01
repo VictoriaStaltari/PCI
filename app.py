@@ -19,12 +19,15 @@ def plan_carrera(nombre_carrera):
         plan_carrera = json.load(f) # Carga el plan de carrera desde el archivo JSON
 
     materias = plan_carrera.get('materias_totales', []) #Pide la lista de materias segun el plan
-    return render_template('carrera.html', carrera=nombre_carrera, materias=materias)
+    
+    titulo_carrera = plan_carrera.get('nombre', 'Carrera Desconocida') #Pide el nombre de la carrera segun el plan
+    
+    return render_template('carrera.html', carrera=nombre_carrera, materias=materias, titulo_carrera=titulo_carrera)
 
 
 @app.route('/carrera/<nombre_carrera>/planificador', methods=['POST'])
 def planificador(nombre_carrera):
-    materias_aprobadas = request.form.getlist('materias_aprobadas')
+    materias_aprobadas = request.form.getlist('materias_aprobadas') # Lista de materias aprobadas, solo los codigos como string
     cant_materias = int(request.form['cant_materias'])
     cuatrimestre_actual = int(request.form['cuatrimestre_actual'])
 
@@ -33,18 +36,16 @@ def planificador(nombre_carrera):
         plan_carrera = json.load(f)
 
     carrera = Carrera.from_dict(plan_carrera)
-        
-    materias_aprobadas_obj = [materia for materia in carrera.materias_totales if materia.codigo in materias_aprobadas]
 
     materias_falt_ordenadas_prioridad = priorizar_materias(
-        carrera.materias_faltantes(materias_aprobadas_obj)
+        carrera.materias_faltantes(materias_aprobadas)
     )
 
     cuatrimestres_organizados = ajustar_cuatrimestres(
         materias_falt_ordenadas_prioridad,
         cant_materias,
         cuatrimestre_actual,
-        materias_aprobadas_obj
+        materias_aprobadas
     )
     print(cuatrimestres_organizados)
     
