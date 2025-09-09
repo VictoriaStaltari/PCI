@@ -4,12 +4,30 @@ body{
     padding: 0;
 }
 header{
-    background-image: repeating-linear-gradient(rgb(19, 6, 204),white);
     color: white;
     padding: 20px;
     text-align: center;
     padding-bottom: 70px;
 }
+.planificador{
+    font-size: 40px;
+}
+.planificador.ingenieria_sistemas{
+    color: #ee2222;
+}
+.planificador.ingenieria_electronica{
+    color: #eebe22;
+}
+.planificador.ingenieria_electricista{
+    color: #7eee22;
+}
+.planificador.ingenieria_computacion{
+    color: #22b4ee;
+}
+.planificador.ingenieria_telecomunicaciones{
+    color: #f330a2;
+}
+
 header.ingenieria_sistemas{
     background-image: linear-gradient(#ee2222, white);
 }
@@ -94,6 +112,7 @@ div {
     margin: 3px;
     border: 1px solid;
     border-radius: 5px;
+    color: white;
 }
 
 .materia_input.ingenieria_sistemas{
@@ -108,6 +127,6 @@ div.ingenieria_electronica{
 .materia_input.ingenieria_computacion{
     background-color: #22b4ee;
 }
-div.ingenieria_telecomunicaciones{
+.materia_input.ingenieria_telecomunicaciones{
     background-color: #f330a2;
 }

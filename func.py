@@ -24,15 +24,18 @@ def organizar(nro_materias_cuatrimeste, materias_faltantes, cuatri_actual, mater
     """
     salida = []  # Lista de cuatrimestres con materias cursables
     i = 0
+    lista_aux = []
     while (len(salida)<nro_materias_cuatrimeste) and (len(materias_faltantes)>0) and (i<len(materias_faltantes)):
 
         # Si la materia es cursable en el cuatrimestre actual y cumple con las correlativas
         if (materias_faltantes[i].es_cursable(cuatri_actual))and(materias_faltantes[i].control_correlativas(materias_aprobadas)):
             materia = materias_faltantes.pop(i)
             salida.append(materia)
-            materias_aprobadas.append(str(materia.codigo))
+            lista_aux.append(str(materia.codigo))
         else:
             i += 1
+    for codigo in lista_aux:
+        materias_aprobadas.append(codigo)
     return salida, materias_faltantes, materias_aprobadas
 
 def ajustar_cuatrimestres(materias_faltantes, nro_materias_cuatrimeste, cuatri_actual, materias_aprobadas): 
