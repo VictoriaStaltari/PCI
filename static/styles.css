@@ -3,31 +3,14 @@ body{
     margin: 0;
     padding: 0;
 }
+
 header{
+    background-image: linear-gradient(#000a97, white);
     color: white;
     padding: 20px;
     text-align: center;
     padding-bottom: 70px;
 }
-.planificador{
-    font-size: 40px;
-}
-.planificador.ingenieria_sistemas{
-    color: #ee2222;
-}
-.planificador.ingenieria_electronica{
-    color: #eebe22;
-}
-.planificador.ingenieria_electricista{
-    color: #7eee22;
-}
-.planificador.ingenieria_computacion{
-    color: #22b4ee;
-}
-.planificador.ingenieria_telecomunicaciones{
-    color: #f330a2;
-}
-
 header.ingenieria_sistemas{
     background-image: linear-gradient(#ee2222, white);
 }
@@ -43,6 +26,36 @@ header.ingenieria_computacion{
 header.ingenieria_telecomunicaciones{
     background-image: linear-gradient(#f330a2, white);
 }
+.planificador{
+    font-size: 40px;
+    margin: 0;
+    padding: 60px 0 40px 0;
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
+    width: 100%;
+}
+.planificador.ingenieria_sistemas{
+    background-image: linear-gradient(#ee2222, white);
+    color: white;
+}
+.planificador.ingenieria_electronica{
+    background-image: linear-gradient(#eebe22, white);
+    color: white;
+}
+.planificador.ingenieria_electricista{
+    background-image: linear-gradient(#7eee22, white);
+    color: white;
+}
+.planificador.ingenieria_computacion{
+    background-image: linear-gradient(#22b4ee, white);
+    color: white;
+}
+.planificador.ingenieria_telecomunicaciones{
+    background-image: linear-gradient(#f330a2, white);
+    color: white;
+}
+
 h1{
     color: white;
     font-size: 50px;
