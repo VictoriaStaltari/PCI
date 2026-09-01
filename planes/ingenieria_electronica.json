@@ -249,7 +249,7 @@
                 3026,
                 2720
             ],
-            "cuatrimestre": -1,
+            "cuatrimestre": 0,
             "correlatividades": [
                 2717,
                 2710
@@ -263,7 +263,7 @@
                 3033,
                 2720
             ],
-            "cuatrimestre": -1,
+            "cuatrimestre": 0,
             "correlatividades": [
                 2539,
                 2503,
@@ -274,7 +274,7 @@
             "nombre": "Técnicas de Comunicación Oral y Escrita para Ingenieros",
             "codigo": 2902,
             "correlativas": [],
-            "cuatrimestre": -1,
+            "cuatrimestre": 0,
             "correlatividades": []
         },
         {
@@ -299,7 +299,7 @@
                 2783,
                 2553
             ],
-            "cuatrimestre": 1,
+            "cuatrimestre": 0,
             "correlatividades": [
                 2538,
                 2840,
@@ -318,7 +318,7 @@
                 3033,
                 2783
             ],
-            "cuatrimestre": 1,
+            "cuatrimestre": 0,
             "correlatividades": [
                 2504,
                 2718,
@@ -334,7 +334,7 @@
             "correlativas": [
                 2502
             ],
-            "cuatrimestre": -1,
+            "cuatrimestre": 0,
             "correlatividades": [
                 2538,
                 2547,
@@ -363,7 +363,7 @@
                 2502,
                 5909
             ],
-            "cuatrimestre": -1,
+            "cuatrimestre": 0,
             "correlatividades": [
                 2812,
                 2547,
